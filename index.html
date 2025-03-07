@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Detector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Real-Time Color Detector</h1>
+    <video id="videoElement" width="100%" height="auto" autoplay></video>
+    
+    <div class="controls">
+        <button id="startButton">Start Camera</button>
+        <button id="stopButton" disabled>Stop Camera</button>
+        <label for="modeSelect">Select Mode:</label>
+        <select id="modeSelect">
+            <option value="normal">Normal Mode</option>
+            <option value="driving">Driving Mode</option>
+        </select>
+    </div>
+    
+    <div id="colorInfo">
+        <h2>Detected Color:</h2>
+        <p id="colorName">None</p>
+        <div id="colorBar"></div>
+        <div id="colorGraph">
+            <div class="colorBlock" id="redBlock"></div>
+            <div class="colorBlock" id="greenBlock"></div>
+            <div class="colorBlock" id="blueBlock"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
