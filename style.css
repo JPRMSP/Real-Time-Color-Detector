@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    color: #333;
+}
+
+video {
+    border: 2px solid #333;
+    margin: 20px auto;
+    display: block;
+    max-width: 100%;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+select {
+    padding: 5px;
+}
+
+#colorInfo {
+    margin-top: 20px;
+}
+
+#colorName {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+#colorBar {
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+#colorGraph {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.colorBlock {
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+button:disabled {
+    background-color: #ccc;
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    video {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #colorGraph {
+        flex-direction: column;
+    }
+
+    .colorBlock {
+        width: 40px;
+        height: 40px;
+    }
+}
